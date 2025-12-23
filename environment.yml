@@ -1,0 +1,19 @@
+name: aoc2025
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12              # Modern Python with nice error messages
+  - numpy                    # Essential for 2D grids/matrices (Day 10+ usually)
+  - scipy                    # Occasional advanced math/spatial algorithms
+  - networkx                 # The gold standard for Graph Theory (shortest path, cliques)
+  - sympy                    # Symbolic math (solving equations without brute force)
+  - z3-solver                # The "Secret Weapon" for constraint satisfaction problems
+  - more-itertools           # Extends standard library with chunking, sliding windows, etc.
+  - parse                    # Like f-strings in reverse; easier than Regex for parsing inputs
+  - tqdm                     # Progress bars (helpful for slow brute-force solutions)
+  - ipykernel                # Required to run Python Cells/Notebooks in VS Code
+  - pip
+  - pip:
+    - advent-of-code-data    # (aocd) Automates downloading inputs/submitting answers
+    - rich                   # Beautiful terminal output/debugging
